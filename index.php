@@ -7,7 +7,7 @@
 <title>Hello World</title>
 
   </head>
-<h1>Can you read me?</h1>
+<h1>Let's learn all about PHP!</h1>
 
 <p>Since it seems to be such a desirable skill, I'm going to do my best to learn php!</p>
 
@@ -76,11 +76,10 @@ $sum2 = $number1 + $number3;
 
 
 ?>
+<hr>
 
 <?php
 
-echo nl2br("\n");
-echo nl2br("\n");
 
 
 echo "This is the people array: ";
@@ -98,8 +97,44 @@ echo nl2br("\n");
 
 echo "This is the third person in the people array: " . $people[2];
 
+
+
+// Let's figure out how loops work:
+
+echo nl2br("\n");
+echo nl2br("\n");
+
+echo "This should output each person in the array separated by a single space: ";
+
+foreach ($people as $person) {
+  echo $person . ' ';
+}
+
+
+
 ?>
 
+<hr>
+
+<?php
+
+$numbers = array(5, 3, 7);
+$sum = 0;
+
+
+
+echo "This should output the sum of the array of numbers: ";
+
+echo nl2br("\n");
+echo nl2br("\n");
+
+foreach ($numbers as $number){
+  $sum = $sum + $number;
+}
+echo $sum;
+
+
+?>
 
 
 
