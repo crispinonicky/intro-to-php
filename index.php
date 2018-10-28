@@ -18,6 +18,8 @@ Enter your name: <input name = "name" type="text">
 
 <hr>
 
+
+
 <?php
 
 echo "Everything below this line is in a PHP tag!";
@@ -74,6 +76,30 @@ $sum2 = $number1 + $number3;
 
 
 ?>
+
+<?php
+
+echo nl2br("\n");
+echo nl2br("\n");
+
+
+echo "This is the people array: ";
+
+
+//This is going to test how arrays work in PHP
+
+
+$people = array("Alice", "Bob", "Christie");
+
+print_r($people);
+  
+echo nl2br("\n");
+echo nl2br("\n");
+
+echo "This is the third person in the people array: " . $people[2];
+
+?>
+
 
 
 
