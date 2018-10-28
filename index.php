@@ -11,8 +11,8 @@
 
 <p>Since it seems to be such a desirable skill, I'm going to do my best to learn php!</p>
 
-<form>
-<input type="text">
+<form action="process.php" method="post">
+Enter your name: <input name = "name" type="text">
 <input type="submit">
 </form>
 
@@ -24,6 +24,8 @@ echo "Everything below this line is in a PHP tag!";
 
 echo nl2br("\n");
 echo nl2br("\n");
+// I'm using this as a manual double linebreak. Wonder if there's a less messy
+// way of doing this....
 
   $number1 = 1;
   $number2 = 2;
